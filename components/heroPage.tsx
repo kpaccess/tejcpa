@@ -1,10 +1,9 @@
-import Link from "next/link";
 import Image from "next/image";
 
 const HeroPage = () => {
   return (
     <section className="bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-50 py-12 md:py-20 px-6 md:px-12 mt-8">
-      <div className="container mx-auto max-w-4xl space-y-8 flex sm:flex-col md:flex-row items-center justify-between gap-4">
+      <div className="container mx-auto max-w-4xl space-y-8  items-center justify-between gap-4 grid md:grid-cols-2">
         <div className="space-y-4">
           <h1 className="text-4xl font-bold tracking-tight">
             Professional Accounting Services
