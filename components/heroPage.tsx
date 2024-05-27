@@ -8,7 +8,7 @@ const HeroPage = () => {
           <h1 className="text-4xl font-bold tracking-tight">
             Professional Accounting Services
           </h1>
-          <p className="text-lg text-gray-300">
+          <p className="text-lg">
             Trusted by businesses of all sizes, our experienced accountants
             provide comprehensive financial solutions to help you achieve your
             goals.
