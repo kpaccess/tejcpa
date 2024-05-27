@@ -7,6 +7,7 @@
 import HeroPage from "@/components/heroPage";
 import Services from "@/components/services";
 import AboutMe from "@/components/about";
+import Testimonials from "@/components/testimonials";
 
 export default function Component() {
   return (
@@ -15,6 +16,7 @@ export default function Component() {
         <HeroPage />
         <AboutMe />
         <Services />
+        <Testimonials />
       </main>
     </div>
   );
