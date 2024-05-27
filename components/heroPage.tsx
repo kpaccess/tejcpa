@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const HeroPage = () => {
   return (
-    <section className="bg-gray-900 text-white py-20 md:py-32 max-w-6xl mx-auto">
-      <div className="container px-4 md:px-6 grid md:grid-cols-2 gap-8 items-center">
+    <section className="bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-50 py-12 md:py-20 px-6 md:px-12 mt-8">
+      <div className="container mx-auto max-w-4xl space-y-8 flex sm:flex-col md:flex-row items-center justify-between gap-4">
         <div className="space-y-4">
           <h1 className="text-4xl font-bold tracking-tight">
             Professional Accounting Services
@@ -14,14 +14,6 @@ const HeroPage = () => {
             provide comprehensive financial solutions to help you achieve your
             goals.
           </p>
-          <div className="flex gap-4">
-            <button className="">
-              <Link href="#">Get a Quote</Link>
-            </button>
-            <button className="">
-              <Link href="#">Learn More</Link>
-            </button>
-          </div>
         </div>
         <Image
           alt="Accountant"

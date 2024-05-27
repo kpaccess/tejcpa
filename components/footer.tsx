@@ -1,6 +1,7 @@
 import { FaBriefcase } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 import { MdSettingsPhone } from "react-icons/md";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -8,16 +9,18 @@ const Footer = () => {
       <div className="container px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-2">
           <FaBriefcase className="h-6 w-6" />
-          <span className="text-lg font-bold">Acme Accounting</span>
+          <span className="text-lg font-bold uppercase">
+            TEJ CPA PROFESSIONAL CORPORATION
+          </span>
         </div>
         <div className="flex flex-col md:flex-row items-center gap-4">
           <div className="flex items-center gap-2">
             <MdSettingsPhone className="h-5 w-5" />
-            <span>(123) 456-7890</span>
+            <span>(416)694-8446</span>
           </div>
           <div className="flex items-center gap-2">
             <CiMail className="h-5 w-5" />
-            <span>info@acmeaccounting.com</span>
+            <Link href="mailto:tejcpainfo@gmail.com">tejcpainfo@gmail.com</Link>
           </div>
         </div>
       </div>

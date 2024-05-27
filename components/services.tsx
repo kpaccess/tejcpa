@@ -17,7 +17,7 @@ const Services = () => {
                 <h3 className="font-semibold">Tax Preparation</h3>
                 <p className="text-gray-500">
                   Accurate and timely tax preparation to ensure compliance and
-                  maximize your deductions.
+                  maximize your deductions. T1, T2, T3.
                 </p>
               </div>
             </li>
