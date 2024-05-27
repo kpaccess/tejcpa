@@ -1,39 +1,87 @@
+import { MdCheck } from "react-icons/md";
+
 const Services = () => {
   return (
-    <section id="projects" className="py-20">
-      <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-8">Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-semibold mb-2">
-              Small Business Accounting
-            </h3>
-            <p className="text-gray-700">
-              Provided comprehensive accounting services for a local small
-              business, including bookkeeping, financial reporting, and tax
-              preparation.
-            </p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-semibold mb-2">
-              Tax Planning and Preparation
-            </h3>
-            <p className="text-gray-700">
-              Successfully planned and prepared taxes for multiple clients,
-              optimizing their tax liabilities while ensuring compliance with
-              all regulations.
-            </p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-semibold mb-2">
-              Financial Analysis for Growth
-            </h3>
-            <p className="text-gray-700">
-              Conducted in-depth financial analysis for a growing startup,
-              providing actionable insights that led to improved financial
-              performance and strategic planning.
-            </p>
-          </div>
+    <section className="py-20 md:py-32 max-w-6xl mx-auto">
+      <div className="container px-4 md:px-6 grid md:grid-cols-2 gap-8">
+        <div className="space-y-4">
+          <h2 className="text-3xl font-bold">Our Services</h2>
+          <p className="text-gray-500">
+            We offer a wide range of accounting services to meet your business
+            needs.
+          </p>
+          <ul className="grid gap-4">
+            <li className="flex items-start gap-3">
+              <MdCheck className="h-6 w-6 text-green-500 mt-10" />
+              <div>
+                <h3 className="font-semibold">Tax Preparation</h3>
+                <p className="text-gray-500">
+                  Accurate and timely tax preparation to ensure compliance and
+                  maximize your deductions.
+                </p>
+              </div>
+            </li>
+            <li className="flex items-start gap-3">
+              <MdCheck className="h-6 w-6 text-green-500 mt-10" />
+              <div>
+                <h3 className="font-semibold">Bookkeeping</h3>
+                <p className="text-gray-500">
+                  Streamline your financial records and stay on top of your
+                  business finances.
+                </p>
+              </div>
+            </li>
+            <li className="flex items-start gap-3">
+              <MdCheck className="h-6 w-6 text-green-500 mt-10" />
+              <div>
+                <h3 className="font-semibold">Financial Consulting</h3>
+                <p className="text-gray-500">
+                  Receive expert guidance on strategic financial decisions to
+                  grow your business.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div className="space-y-4">
+          <h2 className="text-3xl font-bold">Our Credentials</h2>
+          <p className="text-gray-500">
+            Our team of accountants are highly qualified and experienced.
+          </p>
+          <ul className="grid gap-4">
+            <li className="flex items-start gap-3">
+              <MdCheck className="h-6 w-6 text-green-500 mt-10" />
+
+              <div>
+                <h3 className="font-semibold">Certified Public Accountants</h3>
+                <p className="text-gray-500">
+                  All our accountants are licensed and certified public
+                  accountants.
+                </p>
+              </div>
+            </li>
+            <li className="flex items-start gap-3">
+              <MdCheck className="h-6 w-6 text-green-500 mt-10" />
+              <div>
+                <h3 className="font-semibold">Decades of Experience</h3>
+                <p className="text-gray-500">
+                  Our team has over 50 years of combined experience in the
+                  accounting industry.
+                </p>
+              </div>
+            </li>
+            <li className="flex items-start gap-3">
+              <MdCheck className="h-6 w-6 text-green-500 mt-10" />
+
+              <div>
+                <h3 className="font-semibold">Trusted by Businesses</h3>
+                <p className="text-gray-500">
+                  We&apos;ve proudly served hundreds of businesses in our local
+                  community.
+                </p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
