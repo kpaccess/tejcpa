@@ -1,13 +1,15 @@
-import AboutMe from "./about/page";
-import ContactMe from "@/components/contactme";
-import Header from "@/components/header";
+import Footer from "@/components/footer";
 import HeroPage from "@/components/heroPage";
-import Projects from "@/components/projects";
+import Services from "@/components/services";
 
-export default function Home() {
+export default function Component() {
   return (
-    <main className="overflow-auto">
-      <HeroPage />
-    </main>
+    <div className="flex flex-col h-full ">
+      <main className="flex-1">
+        <HeroPage />
+        <Services />
+        <Footer />
+      </main>
+    </div>
   );
 }

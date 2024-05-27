@@ -1,24 +1,45 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { FaBriefcase } from "react-icons/fa";
 
 const Header = () => {
   const path = usePathname();
   return (
-    <div className="flex justify-between items-center p-3 max-w-6xl mx-auto py-8 text-white">
-      <div className="flex gap-4 ">logo</div>
-      <nav className="flex gap-4 items-center ">
+    <header className="bg-gray-900 text-white px-4 lg:px-6 h-16 flex items-center justify-between max-w-6xl mx-auto pt-8 mt-8">
+      <Link className="flex items-center gap-2" href="#">
+        <FaBriefcase className="h-6 w-6" />
+        <span className="text-lg font-bold">Acme Accounting</span>
+      </Link>
+      <nav className="hidden lg:flex gap-6 ">
         {/* Navbar menu */}
-        <Link href="/">Home</Link>
+        <Link
+          href="/"
+          className={
+            path === "/"
+              ? " underline underline-offset-8 decoration-4 decoration-amber-500 rounded-lg"
+              : ""
+          }
+        >
+          Home
+        </Link>
         <Link
           href="/about"
-          className={path === "/about" ? " bg-red-500 p-2" : ""}
+          className={
+            path === "/about"
+              ? " underline underline-offset-8 decoration-4 decoration-amber-500 rounded-lg"
+              : ""
+          }
         >
           About Us
         </Link>
         <Link
           href="/services"
-          className={path === "/services" ? " bg-red-500 p-2" : ""}
+          className={
+            path === "/services"
+              ? " underline underline-offset-8 decoration-4 decoration-amber-500 rounded-lg"
+              : ""
+          }
         >
           Services
         </Link>
@@ -26,7 +47,8 @@ const Header = () => {
           <Link href="mailto:john@example.com">Contact us</Link>
         </button>
       </nav>
-    </div>
+      <button className="hidden lg:inline-flex">Get a Quote</button>
+    </header>
   );
 };
 
