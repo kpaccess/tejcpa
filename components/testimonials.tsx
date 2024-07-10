@@ -17,7 +17,7 @@ const Testimonials = () => {
           <Card>
             <div>
               <blockquote className="text-lg md:text-xl font-medium leading-relaxed text-gray-700 px-2 py-1">
-                John has been an invaluable asset to our business. His expertise
+                Tej has been an invaluable asset to our business. His expertise
                 and attention to detail have helped us navigate the complex
                 world of accounting and taxes with ease.
               </blockquote>
@@ -29,7 +29,7 @@ const Testimonials = () => {
           <Card>
             <div>
               <blockquote className="text-lg md:text-xl font-medium leading-relaxed text-gray-700 px-2 py-1">
-                Working with John has been a game-changer for our business. His
+                Working with Tej has been a game-changer for our business. His
                 strategic financial advice has helped us make informed decisions
                 and achieve our goals.
               </blockquote>
